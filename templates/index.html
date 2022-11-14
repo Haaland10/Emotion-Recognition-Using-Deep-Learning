@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Emotion Prediction</title>
+    <link rel="stylesheet" href="static/css/index.css" />
+  </head>
+  <body>
+    <div class="box">
+      <h1>Emotion Prediction From Audio</h1>
+    </div>
+
+    <div class="box">
+      <form action="/predict" method="post" enctype="multipart/form-data">
+        <label for="audio">Select audio:</label>
+        <input
+          type="file"
+          id="audio"
+          name="audioInput"
+          accept="audio/wav"
+          required
+        />
+        <input class="submit" type="submit" />
+      </form>
+    </div>
+  </body>
+</html>
